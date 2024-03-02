@@ -10,6 +10,36 @@ function convertToRoman(num) {
     };
 
   //your code here
+	let ans='';
+	while (num>0) {
+		if (num>=1000) {
+			ans += 'M';
+			num -= 1000;
+		}else if (num>=500) {
+			ans += 'D';
+			num -= 500;
+		}else if (num>=400) {
+			ans += 'CD';
+			num -= 400;
+		}else if (num>=100) {
+			ans += 'C';
+			num -= 100;
+		}else if (num>=90) {
+			ans += 'XC';
+			num -= 90;
+		}else if (num>=50) {
+			ans += 'L';
+			num -= 50;
+		}else if (num>=40) {
+			ans += 'XL';
+			num -= 40;
+		}else if (num>=10) {
+			ans += 'X';
+			num -= 10;
+		}else if () {
+			
+		}
+	}
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
