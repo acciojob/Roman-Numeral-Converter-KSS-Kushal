@@ -36,15 +36,26 @@ function convertToRoman(num) {
 		}else if (num>=10) {
 			ans += 'X';
 			num -= 10;
-		}else if () {
-			
+		}else if (num>=9) {
+			ans += 'IX';
+			num -= 9;
+		}else if (num>=5) {
+			ans += 'V';
+			num -= 5;
+		}else if (num==4) {
+			ans += 'IV';
+			num -= 4;
+		}else{
+			ans += 'I';
+			num -= 1;
 		}
 	}
+	return ans;
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
-// console.log(convertToRoman(36));
+// console.log(convertToRoman(798));
 
 
 
