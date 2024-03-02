@@ -15,6 +15,9 @@ function convertToRoman(num) {
 		if (num>=1000) {
 			ans += 'M';
 			num -= 1000;
+		}else if (num>=900) {
+			ans += 'CM';
+			num -= 900;
 		}else if (num>=500) {
 			ans += 'D';
 			num -= 500;
